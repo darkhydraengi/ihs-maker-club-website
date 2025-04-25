@@ -27,12 +27,6 @@ Version Control: Git & GitHub
 
 <h2>📂 Repository Structure</h2>
 
-bash
-
-Copy
-
-Edit
-
 /public            
 
 /src                

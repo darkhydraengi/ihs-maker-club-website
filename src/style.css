@@ -5,17 +5,12 @@
 }
 
 .hero {
-  height: 100vh; /* Full screen height */
-  background-image: url("images/FullSpreadEarth.jpg"); /* Path to your image */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  overflow: hidden;
+  background-image: url("../images/FullSpreadEarth.jpg"); /* Path to your image */
+  margin: 0;
+  padding-top: 0px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Optional: add a dark overlay */

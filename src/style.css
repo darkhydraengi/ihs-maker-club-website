@@ -4,9 +4,10 @@
     /* background-color: var(--nav_color); */
 }
 
-.hero {
-  background-image: url("../images/FullSpreadEarth.jpg");
+.hero-image {
+  /*background-image: url("../images/FullSpreadEarth.jpg");*/
   margin: 0;
+  text-align: center;
   padding-top: 60px;
   width: 100%;
   height: auto;

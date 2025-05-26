@@ -19,6 +19,7 @@
 }
 
 .hero-content {
+  color: white;
   position: relative;
   z-index: 1;
 }

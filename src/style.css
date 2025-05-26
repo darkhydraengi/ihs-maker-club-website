@@ -6,6 +6,9 @@
 
 .hero-image {
   background-image: url("../images/FullSpreadEarth.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   text-align: center;
   padding-top: 60px;

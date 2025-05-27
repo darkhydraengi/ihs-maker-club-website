@@ -50,10 +50,36 @@
     <p>Our mission is to empower students through hands-on projects and innovation.</p>
   </section>
   
-  <section id="projects" data-aos="zoom-in">
-    <h2>Project Showcase</h2>
+  <section id="projects" data-aos="fade-up">
+    <h2>Our Projects</h2>
     <div class="project-gallery">
-      <!-- Project cards here -->
+      <div class="project-card featured-project">
+        <div class="badge">🌟 Featured</div>
+        <img src="images/cubesat.jpg" alt="CubeSat Project">
+        <h3>CubeSat Program</h3>
+        <p>Launching our school's first CubeSat into orbit for space research and experiments.</p>
+        <a href="project-pages/cubesat.html" class="btn">Learn More</a>
+      </div>
+  
+      <div class="project-card">
+        <img src="images/3dprinter.jpg" alt="3D Printing Lab">
+        <h3>3D Printing Lab</h3>
+        <p>Prototyping custom parts for student projects and hardware builds.</p>
+        <a href="project-pages/3dprinting.html" class="btn">See Prints</a>
+      </div>
+  
+      <div class="project-card">
+        <img src="images/rocketry.jpg" alt="Rocketry Team">
+        <h3>Rocketry Team</h3>
+        <p>Competing in national rocketry challenges with custom-engineered rockets.</p>
+        <a href="#" class="btn">View Launches</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/comingsoon.jpg" alt="Coming Soon">
+        <h3>More Projects Coming Soon</h3>
+        <p>We're constantly creating new builds, tech hacks, and innovations. Stay tuned!</p>
+      </div>
     </div>
   </section>
 
@@ -103,6 +129,28 @@
   <script>
     AOS.init();
   </script>
+
+<script>
+  document.querySelectorAll(".project-card .btn").forEach(button => {
+    button.addEventListener("click", function (e) {
+      const ripple = document.createElement("span");
+      ripple.classList.add("ripple");
+
+      // Set the size and position based on click location
+      const rect = this.getBoundingClientRect();
+      ripple.style.width = ripple.style.height = Math.max(rect.width, rect.height) + "px";
+      ripple.style.left = e.clientX - rect.left - (rect.width / 2) + "px";
+      ripple.style.top = e.clientY - rect.top - (rect.width / 2) + "px";
+
+      this.appendChild(ripple);
+
+      // Remove the ripple after animation
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  });
+</script>
 
 </body>
 </html>

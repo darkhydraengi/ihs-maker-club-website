@@ -4,19 +4,40 @@
     /* background-color: var(--nav_color); */
 }
 
-.hero-image {
-  background-image: url("../images/FullSpreadEarth.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  text-align: center;
-  padding-top: 60px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
+.hero-titleImage {
+    background-image: url("../images/FullSpreadEarth.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    text-align: center;
 }
+
+.hero-titleImage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+    padding-top: 60px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
 
 .hero-content {
   color: white;

@@ -39,10 +39,62 @@
 
   <div class="hero-titleImage">
     <div class="hero-titleImage-content">
+      <br>
+      <br>
+      <br>
       <h1>IHS Maker Club</h1>
       <a href="#about" class="btn">Learn More</a>
     </div>
   </div>
+
+  <section class="hero-carousel">
+  <div class="carousel">
+    <button class="btn prev">&#10094;</button>
+
+    <div class="image-fader" id="imageFader">
+      <img src="images/FullSpreadEarth.jpg" class="fade-image active">
+      <img src="images/cubesat_launchpad.jpg" class="fade-image">
+      <img src="images/cubesat_inprogress.jpg" class="fade-image">
+    </div>
+
+    <button class="btn next">&#10095;</button>
+  </div>
+</section>
+
+  <script>
+const images = document.querySelectorAll('.fade-image');
+let currentIndex = 0;
+
+function showImage(index) {
+  images.forEach((img, i) => {
+    img.classList.remove('active');
+    if (i === index) img.classList.add('active');
+  });
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
+  resetAutoSlide();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
+  resetAutoSlide();
+}
+
+document.querySelector('.next').addEventListener('click', nextImage);
+document.querySelector('.prev').addEventListener('click', prevImage);
+
+let autoSlide = setInterval(nextImage, 4000);
+
+function resetAutoSlide() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(nextImage, 4000);
+}
+  </script>
+  
 
   
   <section id="about" data-aos="fade-up">

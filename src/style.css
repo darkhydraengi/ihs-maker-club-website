@@ -8,9 +8,9 @@
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  overflow: clip;
+  overflow: hidden;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 1;
 }
@@ -55,7 +55,7 @@ button.btn.next {
 }
 
 button.btn.prev {
-  left: 10px;
+  left: 30px;
 }
 
 button.btn.next {

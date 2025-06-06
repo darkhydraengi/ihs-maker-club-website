@@ -4,6 +4,10 @@
     /* background-color: var(--nav_color); */
 }
 
+img {
+    width: 50%;
+    height: auto;
+}
 .carousel {
   width: 100vw;
   height: 100vh;
